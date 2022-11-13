@@ -5,25 +5,21 @@
  */
 ?>
 <div class="row">
-    <aside class="column">
+    <!-- <aside class="column">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('List Users'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('List Cars'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
-    </aside>
+    </aside> -->
     <div class="column-responsive column-80">
-        <div class="users form content">
+        <div class="cars form content">
             <?= $this->Form->create($user) ?>
             <fieldset>
-                <legend><?= __('Add User') ?></legend>
+                <legend><?= __('New User') ?></legend>
                 <?php
                     echo $this->Form->control('name');
                     echo $this->Form->control('email');
-                    echo $this->Form->control('email_verified_at');
                     echo $this->Form->control('password');
-                    echo $this->Form->control('remember_token');
-                    echo $this->Form->control('created_at');
-                    echo $this->Form->control('updated_at');
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>
